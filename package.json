@@ -1,0 +1,21 @@
+{
+  "name": "square-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "square": "^43.1.0",
+    "xero": "^0.0.8",
+    "xero-node": "^13.1.0"
+  }
+}
