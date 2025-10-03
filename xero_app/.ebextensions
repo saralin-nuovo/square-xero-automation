@@ -1,6 +1,0 @@
-packages:
-  yum:
-    ca-certificates: []
-commands:
-  update_certificates:
-    command: "update-ca-trust force-enable && update-ca-trust extract"
