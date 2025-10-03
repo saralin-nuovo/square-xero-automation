@@ -1,0 +1,10 @@
+version: 1.0
+runtime: python3
+build:
+  commands:
+    - python --version
+    - python -m pip --version
+    - python -m pip install --upgrade pip setuptools wheel
+    - python -m pip install --no-cache-dir -r xero_app/requirements.txt
+run:
+  command: gunicorn --bind 0.0.0.0:$PORT xero_app.app:app
