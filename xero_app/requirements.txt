@@ -3,3 +3,6 @@ gunicorn
 requests
 python-dotenv
 certifi
+--trusted-host pypi.org
+--trusted-host pypi.python.org
+--trusted-host files.pythonhosted.org
