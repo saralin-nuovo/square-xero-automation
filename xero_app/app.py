@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from routes import register_blueprints
 
@@ -6,6 +7,12 @@ def create_app():
     register_blueprints(app)
     return app
 
-if __name__ == "__main__":
-    app = create_app()
-    app.run(host="localhost", port=3000, debug=True)
+app = create_app()
+
+@app.route("/")
+def index():
+    return "Webhook service is running!"
+
+# if __name__ == "__main__":
+#     port = int(os.environ.get("PORT", 3000))  # Render/Heroku sets PORT
+#     app.run(host="0.0.0.0", port=port, debug=True)
